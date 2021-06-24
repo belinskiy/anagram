@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace StrRev
 {
-    class Anagram
+    public class Anagram
     {
-        public static string ReverseWord(string s)
+        public string ReverseWord(string s)
         {
             if (s == null || s.Length == 0)
                 return s;
@@ -27,7 +27,7 @@ namespace StrRev
             }
             return new string(str);
         }
-        public static void Reverse(char[] str, int l, int r)
+        public void Reverse(char[] str, int l, int r)
         {
             while (l < r)
             {

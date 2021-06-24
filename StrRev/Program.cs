@@ -7,10 +7,10 @@ namespace StrRev
 
         static void Main(string[] args)
         {
-            /*            string input = Console.ReadLine();*/
-            string input = "  a1bcd    efg!h";
-
-            Console.WriteLine(Anagram.ReverseWord(input));
+            string input = Console.ReadLine();
+            /*            string input = "  a1bcd    efg!h";*/
+            Anagram anagram = new();
+            Console.WriteLine(anagram.ReverseWord(input));
         }
     }
 }
