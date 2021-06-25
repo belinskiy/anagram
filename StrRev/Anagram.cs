@@ -8,26 +8,26 @@ namespace StrRev
 {
     public class Anagram
     {
-        public string ReverseWord(string s)
+        public string Reverse(string s)
         {
             if (s == null || s.Length == 0)
                 return s;
             char[] str = s.ToCharArray();
 
-            int i = 0;
-            int j = 0;
-            while (j <= str.Length)
+            int l = 0;
+            int r = 0;
+            while (r <= str.Length)
             {
-                if (j == str.Length || str[j] == ' ')
+                if (r == str.Length || str[r] == ' ')
                 {
-                    Reverse(str, i, j - 1);
-                    i = j + 1;
+                    ReverseWord(str, l, r - 1);
+                    l = r + 1;
                 }
-                j++;
+                r++;
             }
             return new string(str);
         }
-        public void Reverse(char[] str, int l, int r)
+        public void ReverseWord(char[] str, int l, int r)
         {
             while (l < r)
             {

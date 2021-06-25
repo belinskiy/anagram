@@ -13,7 +13,7 @@ namespace StrRev
             var anagram = new Anagram();
 
             // act 
-            string result = anagram.ReverseWord(null);
+            string result = anagram.Reverse(null);
 
             // assert
             Assert.Null(result);
@@ -33,7 +33,7 @@ namespace StrRev
             var anagram = new Anagram();
 
             // act 
-            string actual = anagram.ReverseWord(input);
+            string actual = anagram.Reverse(input);
 
             // assert
             Assert.Equal(expected, actual);

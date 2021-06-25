@@ -8,9 +8,10 @@ namespace StrRev
         static void Main(string[] args)
         {
             string input = Console.ReadLine();
-            /*            string input = "  a1bcd    efg!h";*/
+/*            string input = "  a1bcd    efg!h";*/
+            Console.WriteLine("Input  is: " + input);
             Anagram anagram = new();
-            Console.WriteLine(anagram.ReverseWord(input));
+            Console.WriteLine("Output is: " + anagram.Reverse(input));
         }
     }
 }
